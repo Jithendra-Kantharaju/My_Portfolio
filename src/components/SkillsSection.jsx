@@ -2,29 +2,37 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
-  // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
-  { name: "TypeScript", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
+  // Programming Languages
+  { name: "C", level: 95, category: "programming languages" },
+  { name: "OOPS C++", level: 90, category: "programming languages" },
+  { name: "Python", level: 90, category: "programming languages" },
+  { name: "Embedded c", level: 85, category: "programming languages" },
+  { name: "MYSql basics", level: 60, category: "programming languages" },
+  { name: "Bash", level: 80, category: "programming languages" },
 
-  // Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "GraphQL", level: 60, category: "backend" },
+  // Infrastructure & Configuration
+  { name: "YAML", level: 80, category: "infrastructure & configuration" },
+  { name: "HCL", level: 75, category: "infrastructure & configuration" },
+  { name: "Vagrant", level: 70, category: "infrastructure & configuration" },
+  { name: "Ansible", level: 65, category: "infrastructure & configuration" },
+  { name: "Docker & Docker Compose", level: 60, category: "infrastructure & configuration" },
+  { name: "Kubernetes", level: 75, category: "infrastructure & configuration" },
+  { name: "Terraform", level: 65, category: "infrastructure & configuration" },
+
+  // Platforms
+  { name: "GitHub Actions", level: 80, category: "platforms" },
+  { name: "Jenkins", level: 75, category: "platforms" },
+  { name: "Nexus", level: 80, category: "platforms" },
+  { name: "SonarQube", level: 95, category: "platforms" },
 
   // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
+  { name: "Linux & CLI", level: 90, category: "tools" },
+  { name: "Git & GitHub", level: 70, category: "tools" },
+  { name: "Maven", level: 85, category: "tools" },
   { name: "VS Code", level: 95, category: "tools" },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "programming languages", "infrastructure & configuration", "platforms", "tools"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
